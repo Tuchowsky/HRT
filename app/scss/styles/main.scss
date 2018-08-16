@@ -1,0 +1,88 @@
+@import 'app/scss/styles/variables';
+//reseting css
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//help classes
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal-center{
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-center{
+    display: flex;
+    align-items: center;
+}
+
+.hidden{
+    // visibility: hidden;
+    display: none;
+}
+
+.visible{
+    // visibility: visible;
+    display: block;
+}
+
+//main styling
+html {
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    height: 100%;
+    background-image: url("../../assets/jpg/player.jpg");
+    font-family: 'Rambla', sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 1.4rem;
+    transition: all 2s;
+}
+
+a {
+    color: $font-artist-color;
+}
+
+a:hover {
+    text-decoration: none;
+    color: $font-artist-color;
+}
+
+h1 { 
+    font-size: 2.4rem; 
+}
+
+i {
+    font-size: 1.3rem;
+}
+
+.welcome-logo{
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.welcome-logo > img{
+    width: 50%;
+}
+//animation classes
+#scale-up{
+    transform: scale(1.15);
+}
+
+@import "app/scss/styles/player.scss";
+@import "app/scss/styles/playlist.scss";
+@import "app/scss/styles/media-queries.scss";

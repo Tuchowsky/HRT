@@ -1,0 +1,23 @@
+@import 'app/scss/styles/variables';
+
+@media only screen and (max-width: 780px){
+    .p-container:last-child{
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        margin-left: 0;
+        z-index: 10;
+        width: calc(360px - 40);
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .p-container{
+        width: calc(100%);
+    }
+
+    .p-container:last-child{
+        width: calc(100% - 30px);
+    }
+}

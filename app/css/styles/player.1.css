@@ -1,0 +1,99 @@
+#main {
+  height: 100%; }
+  #main .row {
+    height: 100%; }
+
+.player-container {
+  height: 480px;
+  width: 360px;
+  position: relative;
+  background-color: #eeeff5;
+  border-radius: 25px; }
+  .player-container .song-content {
+    height: 338px;
+    width: 100%;
+    position: relative;
+    border-radius: 25px 25px 0 0; }
+    .player-container .song-content .song-cont-item {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 25px 25px 0 0; }
+    .player-container .song-content .song-top-navigation {
+      height: 65px;
+      width: 100%;
+      z-index: 5;
+      background-color: rgba(42, 34, 77, 0.6); }
+    .player-container .song-content .song-content-image {
+      height: 100%;
+      width: 100%;
+      background-image: url("../../assets/jpg/songs-bg/Icona_Pop.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      background-size: 113%;
+      z-index: 1; }
+    .player-container .song-content .song-content-mask {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(84, 66, 130, 0.26);
+      z-index: 2; }
+    .player-container .song-content .song-content-info {
+      height: 65px;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 5;
+      background-color: rgba(42, 34, 77, 0.6); }
+  .player-container .song-navigation {
+    position: relative;
+    z-index: 5; }
+    .player-container .song-navigation .prog-bar {
+      height: 7px;
+      width: 100%; }
+      .player-container .song-navigation .prog-bar .prog {
+        height: 100%;
+        float: left; }
+      .player-container .song-navigation .prog-bar .progress-finished {
+        width: 70%;
+        position: relative;
+        background-color: #fff; }
+        .player-container .song-navigation .prog-bar .progress-finished .btn-progress {
+          height: 22px;
+          width: 22px;
+          position: absolute;
+          right: 0;
+          top: 50%;
+          border-radius: 50%;
+          background-color: #fff;
+          transform: translate(50%, -50%);
+          box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1); }
+      .player-container .song-navigation .prog-bar .progress-to-finish {
+        width: 30%;
+        background-color: #ed5e74; }
+    .player-container .song-navigation .navigation-items {
+      height: 135px;
+      justify-content: space-between; }
+      .player-container .song-navigation .navigation-items .btn-song-navigation {
+        display: flex;
+        flex-direction: row; }
+    .player-container .song-navigation .navigation-items div:first-child {
+      margin-left: 20px; }
+    .player-container .song-navigation .navigation-items div:last-child {
+      margin-right: 20px; }
+
+.btn-small {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  background-color: #fff; }
+
+.btn-big {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin: 0 20px; }
+
+.btn-p {
+  background-color: #60558f; }
