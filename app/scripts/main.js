@@ -20,9 +20,10 @@ $(window).ready(function(){
             <a href="#" title="${element.artist}">${element.artist}</a>
             <a href="#" title="${element.title}">${element.title}</a>
             `;
-            imageCont.css('background-image', `url(../../assets/jpg/songs-bg/${element.image})`);
+            imageCont.css('background-image', `url("assets/jpg/song-bg/${element.image}")`);
             chosenSongIndex = 0;
         }
+
         songList[0].innerHTML += `
         <div class="song-list-item vertical-center">
             <div class="song-info">
@@ -76,7 +77,7 @@ $(window).ready(function(){
             <a href="#" title="${songs[songIndex].artist}">${songs[songIndex].artist}</a>
             <a href="#" title="${songs[songIndex].title}">${songs[songIndex].title}</a>
         `;
-        imageCont.css('background-image', `url(../../assets/jpg/songs-bg/${songs[songIndex].image})`);
+        imageCont.css('background-image', `url("assets/jpg/song-bg/${songs[songIndex].image}")`);
         chosenSongIndex = songIndex;
         hideContainer(playlistCont);
     });  
@@ -89,14 +90,14 @@ $(window).ready(function(){
                 <a href="#" title="${songs[chosenSongIndex].artist}">${songs[chosenSongIndex].artist}</a>
                 <a href="#" title="${songs[chosenSongIndex].title}">${songs[chosenSongIndex].title}</a>
             `;
-            imageCont.css('background-image', `url(../../assets/jpg/songs-bg/${songs[chosenSongIndex].image})`);
+            imageCont.css('background-image', `url("assets/jpg/song-bg/${songs[chosenSongIndex].image}")`);
         }
         else{
             playerSongContent[0].innerHTML = `
                 <a href="#" title="${songs[chosenSongIndex+1].artist}">${songs[chosenSongIndex+1].artist}</a>
                 <a href="#" title="${songs[chosenSongIndex+1].title}">${songs[chosenSongIndex+1].title}</a>
             `;
-            imageCont.css('background-image', `url(../../assets/jpg/songs-bg/${songs[chosenSongIndex+1].image})`);
+            imageCont.css('background-image', `url("assets/jpg/song-bg/${songs[chosenSongIndex+1].image}")`);
             chosenSongIndex = chosenSongIndex + 1;   
         }       
     });
@@ -108,13 +109,13 @@ $(window).ready(function(){
             <a href="#" title="${songs[chosenSongIndex].artist}">${songs[chosenSongIndex].artist}</a>
             <a href="#" title="${songs[chosenSongIndex].title}">${songs[chosenSongIndex].title}</a>
             `;
-            imageCont.css('background-image', `url(../../assets/jpg/songs-bg/${songs[chosenSongIndex].image})`);
+            imageCont.css('background-image', `url("assets/jpg/song-bg/${songs[chosenSongIndex].image}")`);
         }else{
             playerSongContent[0].innerHTML = `
             <a href="#" title="${songs[chosenSongIndex-1].artist}">${songs[chosenSongIndex-1].artist}</a>
-            <a href="#" title="${songs[chosenSongIndex-1].title}">${songs[chosenSongIndex-1].title}</a>
+            <a href="#" title="${songs[chosenSongIndex-1].title}">${songs[chosenSongIndex-1].title}</a>"
             `;
-            imageCont.css('background-image', `url(../../assets/jpg/songs-bg/${songs[chosenSongIndex-1].image})`);
+            imageCont.css('background-image', `url("assets/jpg/song-bg/${songs[chosenSongIndex-1].image}")`);
             chosenSongIndex = chosenSongIndex - 1;
         }
     });
