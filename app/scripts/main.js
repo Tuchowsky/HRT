@@ -113,7 +113,7 @@ $(window).ready(function(){
         }else{
             playerSongContent[0].innerHTML = `
             <a href="#" title="${songs[chosenSongIndex-1].artist}">${songs[chosenSongIndex-1].artist}</a>
-            <a href="#" title="${songs[chosenSongIndex-1].title}">${songs[chosenSongIndex-1].title}</a>"
+            <a href="#" title="${songs[chosenSongIndex-1].title}">${songs[chosenSongIndex-1].title}</a>
             `;
             imageCont.css('background-image', `url("assets/jpg/song-bg/${songs[chosenSongIndex-1].image}")`);
             chosenSongIndex = chosenSongIndex - 1;
